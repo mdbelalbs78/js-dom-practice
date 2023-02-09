@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tout of DOM</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        .fruits-container li {
+            color: tomato;
+        }
+
+        #fruits-title {
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p id="job dibe allah amr chesta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro officiis odit
+            nulla quasi totam assumenda
+            necessitatibus, reiciendis vel expedita! Quia non ipsam quae iusto ex cum earum officiis aut debitis.</p>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>My Awesome DOM de baba</h1>
+            <ul>
+                <li>Jalali Set</li>
+                <li>Shafayet</li>
+                <li>bonobash</li>
+                <li>Dom de re baba</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random-class blue-bg">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li> 
+            </ul>
+        </section>
+        <section id="places-container" class="large-text">
+            <h1>Places I like to visit</h1>
+            <ul id="places-list">
+                <li class="bon">Soondarban</li>
+                <li class="bon">bandorban</li>
+                <li class="bon">kataban</li>
+                <li>shalbon</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/styleIn.js"></script>
+    <script>
+        const lilocation = document.getElementsByTagName('li');
+        //    console.log(lilocation);
+        for (const li of lilocation) {
+            // console.log(li.innerText);
+        }
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'I want a font end developer';
+
+        const allHeding = document.getElementsByTagName('h1');
+        // console.log(allHeding);
+        for (const heding of allHeding) {
+            // console.log(heding.innerText);
+        }
+
+        const places = document.getElementsByClassName('bon');
+        for (const place of places) {
+            // console.log(place.innerText);
+        }
+
+        // querySelectorAll
+
+        const somLi = document.querySelectorAll('.fruits-container li')
+        for (const query of somLi) {
+            // console.log(query.innerText);
+        }
+    </script>
+</body>
+
+</html>
